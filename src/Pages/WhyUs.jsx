@@ -2,7 +2,7 @@ const WhyUs = () => {
   return (
     <div className=" flex flex-col gap-11 items-center justify-center  ">
       <div className=" flex flex-col gap-11">
-        <h1 className=" md:text-[10.5vw] text-[50px] font-bold  text-center">
+        <h1 className=" md:text-[10.5vw] text-[40px] font-bold  text-center">
           WHY{" "}
           <span className=" bg-gradient-to-b from-orange-500 to-yellow-300 inline-block text-transparent bg-clip-text">
             US?
@@ -23,7 +23,7 @@ const WhyUs = () => {
                 Friendly Staffs
               </h5>
 
-              <p className="mb-3 font-normal ">
+              <p className="mb-3  ">
                 Our staffs are always there to help you for booking and also for
                 managing the tournament and games.
               </p>
@@ -57,7 +57,7 @@ const WhyUs = () => {
                 No waiting
               </h5>
 
-              <p className="mb-3 font-normal ">
+              <p className="mb-3  ">
                 In other turf ou need to wait till the previous customer vacate
                 the turf but in ours as you book the turf you can visit at the
                 booked timing and start uout play.
@@ -92,7 +92,7 @@ const WhyUs = () => {
                 Secure Booking
               </h5>
 
-              <p className="mb-3 font-normal ">
+              <p className="mb-3  ">
                 Your booking details and payment are secured no need to worry
                 about it. You are always secured during your payments.
               </p>
@@ -122,7 +122,7 @@ const WhyUs = () => {
         </div>
       </div>
 
-      <h1 className=" md:text-[5vw] text-[40px] font-bold  text-center md:text-start">
+      <h1 className=" md:text-[5vw] text-[30px] font-bold  text-center md:text-start">
         WHAT WE{" "}
         <span className=" bg-gradient-to-b from-orange-500 to-yellow-300 inline-block text-transparent bg-clip-text">
           HAVE?
@@ -140,7 +140,7 @@ const WhyUs = () => {
                 Cricket
               </h5>
             </a>
-            <p className="mb-3 font-normal ">
+            <p className="mb-3  ">
               We have cricket in our turf. You no need to worry about the bat,
               stumps, ball and the pitch. We provide you all the necessary
               think. The only think you have to do is book our turf.
@@ -183,7 +183,7 @@ const WhyUs = () => {
                 Hockey
               </h5>
             </a>
-            <p className="mb-3 font-normal ">
+            <p className="mb-3  ">
               We have hockey in our turf. You no need to worry about the bat,
               ball and the pitch. We provide you all the necessary think. The
               only think you have to do is book our turf.
@@ -222,7 +222,7 @@ const WhyUs = () => {
                 Football
               </h5>
             </a>
-            <p className="mb-3 font-normal ">
+            <p className="mb-3  ">
               We have football in our turf. You no need to worry about the ball
               and goal post. We provide you all the necessary think. The only
               think you have to do is book our turf.

@@ -10,7 +10,7 @@ const LandingPage = () => {
             />
           </video>
           <div className=" top-0 left-0 bg-black mix-blend-multiply flex items-center justify-center  absolute h-[100%] w-[100%]">
-            <h1 className=" text-center  md:text-[20.5vw] text-[70px] tracking-tighter font-bold ">
+            <h1 className=" text-center  md:text-[15vw] text-[50px] tracking-tighter font-bold ">
               MAVERICK TURF
             </h1>
           </div>

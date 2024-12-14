@@ -6,7 +6,7 @@ import EmailIcon from "@mui/icons-material/Email";
 const ContactUs = () => {
   return (
     <div className="">
-      <h1 className=" md:text-[10.5vw] text-[50px] font-bold  text-center ">
+      <h1 className=" md:text-[10.5vw] text-[40px] font-bold  text-center ">
         CONTACT{" "}
         <span className=" bg-gradient-to-b from-orange-500 to-yellow-300 inline-block text-transparent bg-clip-text">
           US

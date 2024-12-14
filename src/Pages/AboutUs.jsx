@@ -1,7 +1,7 @@
 const AboutUs = () => {
   return (
-    <div className="flex flex-col gap-11 items-center  justify-center">
-      <h1 className=" md:text-[10.5vw] text-[60px] font-bold">
+    <div className="flex flex-col gap-11 items-center  justify-center  ">
+      <h1 className=" md:text-[10.5vw] text-[40px] font-bold">
         OUR{" "}
         <span className=" bg-gradient-to-b from-orange-500 to-yellow-300 inline-block text-transparent bg-clip-text">
           STORY
@@ -17,9 +17,9 @@ const AboutUs = () => {
       </p>
       <div className=" flex md:flex-row flex-col gap-5 items-center justify-center h-full">
         <div className=" flex flex-col   md:w-[50%] items-center  h-full ">
-          <div className=" flex flex-col gap-2 items-center justify-center border p-4 h-[400px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
+          <div className=" flex flex-col gap-2 items-center justify-center p-4 h-[400px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
             {" "}
-            <h1 className=" md:text-[5vw] text-[50px] font-bold text-center md:text-start">
+            <h1 className=" md:text-[5vw] text-[40px] font-bold text-center md:text-start">
               OUR{" "}
               <span className=" bg-gradient-to-b from-orange-500 to-yellow-300 inline-block text-transparent bg-clip-text">
                 VISION
@@ -37,8 +37,8 @@ const AboutUs = () => {
         </div>
 
         <div className=" flex flex-col  md:w-[50%] items-center justify-center  h-full ">
-          <div className=" flex flex-col gap-2  items-center justify-center border p-4 h-[400px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
-            <h1 className=" md:text-[5vw] text-[50px] font-bold  text-center md:text-start">
+          <div className=" flex flex-col gap-2  items-center justify-center  p-4 h-[400px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
+            <h1 className=" md:text-[5vw] text-[40px] font-bold  text-center md:text-start">
               OUR{" "}
               <span className=" bg-gradient-to-b from-orange-500 to-yellow-300 inline-block text-transparent bg-clip-text">
                 MOTIVE

@@ -1,7 +1,7 @@
 const Offers = () => {
   return (
     <div className=" flex flex-col p-4">
-      <h1 className=" md:text-[10.5vw] text-[50px] font-bold  text-center ">
+      <h1 className=" md:text-[10.5vw] text-[40px] font-bold  text-center ">
         OUR{" "}
         <span className=" bg-gradient-to-b from-orange-500 to-yellow-300 inline-block text-transparent bg-clip-text">
           OFFERS
@@ -20,7 +20,7 @@ const Offers = () => {
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
             <h5 className="mb-2 text-2xl font-bold tracking-tight ">50% OFF</h5>
-            <p className="mb-3 font-normal ">
+            <p className="mb-3  ">
               For the first 20 customers we provide 50% off for hockey
             </p>
           </div>
@@ -37,7 +37,7 @@ const Offers = () => {
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
             <h5 className="mb-2 text-2xl font-bold tracking-tight ">60% OFF</h5>
-            <p className="mb-3 font-normal ">
+            <p className="mb-3  ">
               For the first 20 customers we provide 60% off for football.
             </p>
           </div>
@@ -54,7 +54,7 @@ const Offers = () => {
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
             <h5 className="mb-2 text-2xl font-bold tracking-tight ">80% OFF</h5>
-            <p className="mb-3 font-normal ">
+            <p className="mb-3  ">
               For the first 5 customers we provide 80% off for cricket
             </p>
           </div>
@@ -71,7 +71,7 @@ const Offers = () => {
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
             <h5 className="mb-2 text-2xl font-bold tracking-tight ">Free</h5>
-            <p className="mb-3 font-normal ">
+            <p className="mb-3  ">
               For the first 2 customers we provide the table tennis facility
               free.
             </p>
@@ -79,7 +79,7 @@ const Offers = () => {
         </a>
       </div>
 
-      <h1 className=" md:text-[10.5vw] text-[40px] font-bold  text-center   bg-gradient-to-b from-orange-500 to-yellow-300 inline-block text-transparent bg-clip-text">
+      <h1 className=" md:text-[9vw] text-[32px] font-bold  text-center   bg-gradient-to-b from-orange-500 to-yellow-300 inline-block text-transparent bg-clip-text">
         TOURNAMENTS
       </h1>
       <div className="flex items-center justify-center md:justify-around flex-wrap gap-5 ">
@@ -98,7 +98,7 @@ const Offers = () => {
                 Hockey 5 vs 5
               </h5>
             </a>
-            <p className="mb-3 font-normal ">
+            <p className="mb-3  ">
               This is a 5 vs 5 tournament. You are given 30 min and the team
               with highest goal will be awarded as winners. There is a cash
               prize of 5 thousand.
@@ -137,7 +137,7 @@ const Offers = () => {
                 Football 5 vs 5
               </h5>
             </a>
-            <p className="mb-3 font-normal ">
+            <p className="mb-3  ">
               This is a 5 vs 5 tournament. You are given 30 min and the team
               with highest goal will be awarded as winners. There is a cash
               prize of 5 thousand.
@@ -176,7 +176,7 @@ const Offers = () => {
                 Cricket 5 vs 5 10-overs
               </h5>
             </a>
-            <p className="mb-3 font-normal ">
+            <p className="mb-3  ">
               We are conduction cricket tournaments everymonth and the winning
               will get a cash price of 10 thousand.
             </p>

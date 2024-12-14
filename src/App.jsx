@@ -13,9 +13,9 @@ import WhyUs from "./Pages/WhyUs";
 
 const App = () => {
   return (
-    <div className=" bg-black text-white flex flex-col gap-2">
+    <div className=" bg-black text-white flex flex-col gap-2 font-all">
       <Header />
-      <main className=" mt-[100px] md:mt-[100px]">
+      <main className=" mt-[100px] md:mt-[100px] font-thin">
         <LandingPage />
         <LaunchingSoon />
         <section className=" p-4">

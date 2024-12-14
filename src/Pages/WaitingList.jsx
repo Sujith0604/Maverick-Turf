@@ -1,7 +1,7 @@
 const WaitingList = () => {
   return (
     <div className=" flex flex-col gap-11 items-center justify-center p-4">
-      <h1 className=" md:text-[10.5vw] text-[50px] font-bold  text-center ">
+      <h1 className=" md:text-[10.5vw] text-[40px] font-bold  text-center ">
         JOIN{" "}
         <span className=" bg-gradient-to-b from-orange-500 to-yellow-300 inline-block text-transparent bg-clip-text">
           US
@@ -17,10 +17,10 @@ const WaitingList = () => {
       <div className=" md:flex w-full">
         <div className="relative overflow-hidden md:flex w-1/2 bg-gradient-to-b from-orange-500 to-yellow-300 justify-around items-center hidden">
           <div>
-            <h1 className="text-white font-bold text-4xl font-sans">
+            <h1 className="text-black font-bold text-4xl font-sans">
               Maverick Club
             </h1>
-            <p className="text-white mt-1">
+            <p className=" text-black mt-1">
               By clicking on join us we will be a part of maverick club.
             </p>
             <button

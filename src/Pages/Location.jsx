@@ -1,7 +1,7 @@
 const Location = () => {
   return (
     <div className=" flex flex-col ">
-      <h1 className=" md:text-[10.5vw] text-[40px] font-bold text-center ">
+      <h1 className=" md:text-[8vw] text-[30px] font-bold text-center ">
         OUR{" "}
         <span className=" bg-gradient-to-b from-orange-500 to-yellow-300 inline-block text-transparent bg-clip-text">
           LOCATION
