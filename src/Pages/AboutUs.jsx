@@ -1,6 +1,6 @@
 const AboutUs = () => {
   return (
-    <div className="p-4 flex flex-col gap-11 items-center md:items-start justify-center">
+    <div className="flex flex-col gap-11 items-center  justify-center">
       <h1 className=" md:text-[10.5vw] text-[60px] font-bold">
         OUR{" "}
         <span className=" bg-gradient-to-b from-orange-500 to-yellow-300 inline-block text-transparent bg-clip-text">
@@ -15,15 +15,9 @@ const AboutUs = () => {
         We understand that every game counts, and the right environment can make
         all the difference.
       </p>
-      <div className=" flex md:flex-row flex-col items-center justify-center    ">
-        <div className=" flex  gap-10 md:w-[50%] flex-wrap items-center justify-center  ">
-          <div className="h-[300px] w-[300px] bg-red-400 rounded-3xl"></div>
-          <div className="h-[300px] w-[300px] bg-red-400 rounded-full"></div>
-          <div className="h-[300px] w-[300px] bg-red-400 rounded-full"></div>
-          <div className="h-[300px] w-[300px] bg-red-400 rounded-3xl"></div>
-        </div>
-        <div className=" flex flex-col gap-5  md:w-[50%] items-center ">
-          <div className=" flex flex-col gap-2">
+      <div className=" flex md:flex-row flex-col gap-5 items-center justify-center h-full">
+        <div className=" flex flex-col   md:w-[50%] items-center  h-full ">
+          <div className=" flex flex-col gap-2 items-center justify-center border p-4 h-[400px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
             {" "}
             <h1 className=" md:text-[5vw] text-[50px] font-bold text-center md:text-start">
               OUR{" "}
@@ -40,7 +34,10 @@ const AboutUs = () => {
               need to ensure your event is successful.
             </p>
           </div>
-          <div className=" flex flex-col gap-2">
+        </div>
+
+        <div className=" flex flex-col  md:w-[50%] items-center justify-center  h-full ">
+          <div className=" flex flex-col gap-2  items-center justify-center border p-4 h-[400px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
             <h1 className=" md:text-[5vw] text-[50px] font-bold  text-center md:text-start">
               OUR{" "}
               <span className=" bg-gradient-to-b from-orange-500 to-yellow-300 inline-block text-transparent bg-clip-text">

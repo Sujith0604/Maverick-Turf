@@ -15,16 +15,19 @@ const App = () => {
   return (
     <div className=" bg-black text-white flex flex-col gap-2">
       <Header />
-      <main>
+      <main className=" mt-[100px] md:mt-[100px]">
         <LandingPage />
         <LaunchingSoon />
-        <AboutUs />
-        <WhyUs />
-        <GalleryPage />
-        <Offers />
-        <WaitingList />
-        <QuoateSection />
-        <Location />
+        <section className=" p-4">
+          <AboutUs />
+          <WhyUs />
+          <GalleryPage />
+          <Offers />
+          <WaitingList />
+          <QuoateSection />
+          <ContactUs />
+          <Location />
+        </section>
       </main>
 
       <Footer />
