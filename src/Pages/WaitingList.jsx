@@ -1,6 +1,33 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 const WaitingList = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_2h7y7y8", "template_xbpw2b5", form.current, {
+        publicKey: "0GL5RKmaU17SDxy6G",
+      })
+      .then(
+        () => {
+          alert("SUCCESS!");
+          form.current.reset();
+        },
+        (error) => {
+          alert("FAILED...", error.text);
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
-    <div className=" flex flex-col gap-11 items-center justify-center p-4">
+    <div
+      id="joinus"
+      className=" flex flex-col gap-11 items-center justify-center p-4"
+    >
       <h1 className=" md:text-[10.5vw] text-[40px] font-bold  text-center ">
         JOIN{" "}
         <span className=" bg-gradient-to-b from-orange-500 to-yellow-300 inline-block text-transparent bg-clip-text">
@@ -36,7 +63,7 @@ const WaitingList = () => {
           <div className="absolute -top-20 -right-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
         </div>
         <div className="flex md:w-1/2 justify-center py-10 items-center bg-white">
-          <form className="bg-white">
+          <form ref={form} onSubmit={sendEmail} className="bg-white">
             <h1 className="text-gray-800 font-bold text-2xl mb-1">
               JOIN US NOW
             </h1>
@@ -59,7 +86,7 @@ const WaitingList = () => {
               <input
                 className="pl-2 outline-none border-none"
                 type="text"
-                name=""
+                name="from_name"
                 id=""
                 placeholder="Full name"
               />
@@ -82,7 +109,7 @@ const WaitingList = () => {
               <input
                 className="pl-2 outline-none border-none"
                 type="text"
-                name=""
+                name="number"
                 id=""
                 placeholder="Number"
               />
@@ -105,14 +132,36 @@ const WaitingList = () => {
               <input
                 className="pl-2 outline-none border-none"
                 type="text"
-                name=""
+                name="user_email"
                 id=""
                 placeholder="Email Address"
+              />
+            </div>
+            <div className="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 text-gray-400"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <textarea
+                className="pl-2 outline-none border-none text-black"
+                type="text"
+                name="message"
+                id=""
+                placeholder="Enter message"
               />
             </div>
 
             <button
               type="submit"
+              value="Send"
               className="block w-full  bg-gradient-to-b from-orange-500 to-yellow-300 mt-4 py-2  text-black font-semibold mb-2"
             >
               JOIN NOW

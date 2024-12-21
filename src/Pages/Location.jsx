@@ -1,6 +1,6 @@
 const Location = () => {
   return (
-    <div className=" flex flex-col ">
+    <section id="location" className=" flex flex-col ">
       <h1 className=" md:text-[8vw] text-[30px] font-bold text-center ">
         OUR{" "}
         <span className=" bg-gradient-to-b from-orange-500 to-yellow-300 inline-block text-transparent bg-clip-text">
@@ -13,7 +13,7 @@ const Location = () => {
         allowfullscreen=""
         loading="lazy"
       ></iframe>
-    </div>
+    </section>
   );
 };
 

@@ -1,11 +1,29 @@
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import EmailIcon from "@mui/icons-material/Email";
-
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 const ContactUs = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_2h7y7y8", "template_r3xqlf4", form.current, {
+        publicKey: "0GL5RKmaU17SDxy6G",
+      })
+      .then(
+        () => {
+          alert("SUCCESS!");
+          form.current.reset();
+        },
+        (error) => {
+          alert("FAILED...", error.text);
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
-    <div className="">
+    <section id="contact" className="">
       <h1 className=" md:text-[10.5vw] text-[40px] font-bold  text-center ">
         CONTACT{" "}
         <span className=" bg-gradient-to-b from-orange-500 to-yellow-300 inline-block text-transparent bg-clip-text">
@@ -15,7 +33,11 @@ const ContactUs = () => {
 
       <div className="flex justify-center items-center   ">
         <div className="container mx-auto my-4 px-4 lg:px-20">
-          <div className="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl"
+          >
             <div className="flex">
               <h1 className="font-bold  uppercase text-xl md:text-5xl">
                 Send us a <br /> message
@@ -25,39 +47,41 @@ const ContactUs = () => {
               <input
                 className="w-full bg-gray-100  mt-2 p-3  focus:outline-none focus:shadow-outline"
                 type="text"
-                placeholder="First Name*"
+                name="from_name"
+                placeholder="Full Name*"
               />
-              <input
-                className="w-full bg-gray-100  mt-2 p-3  focus:outline-none focus:shadow-outline"
-                type="text"
-                placeholder="Last Name*"
-              />
+
               <input
                 className="w-full bg-gray-100  mt-2 p-3  focus:outline-none focus:shadow-outline"
                 type="email"
+                name="email"
                 placeholder="Email*"
               />
               <input
                 className="w-full bg-gray-100  mt-2 p-3  focus:outline-none focus:shadow-outline"
                 type="number"
+                name="number"
                 placeholder="Phone*"
               />
             </div>
             <div className="my-4">
               <textarea
                 placeholder="Message*"
+                name="message"
                 className="w-full h-32 bg-gray-100 text-black mt-2 p-3  focus:outline-none focus:shadow-outline"
               ></textarea>
             </div>
             <div className="my-2 w-1/2 lg:w-1/4">
               <button
+                type="submit"
+                value="Send"
                 className="uppercase text-sm font-bold tracking-wide text-black bg-gradient-to-b from-orange-500 to-yellow-300 p-4  w-full 
                       focus:outline-none focus:shadow-outline"
               >
                 Send Message
               </button>
             </div>
-          </div>
+          </form>
 
           <div className="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-gradient-to-b from-orange-500 to-yellow-300 ">
             <div className="flex flex-col text-black">
@@ -96,7 +120,7 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

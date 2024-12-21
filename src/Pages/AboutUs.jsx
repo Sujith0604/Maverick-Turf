@@ -1,6 +1,9 @@
 const AboutUs = () => {
   return (
-    <div className="flex flex-col gap-11 items-center  justify-center  ">
+    <section
+      id="about"
+      className="flex flex-col gap-11 items-center  justify-center  "
+    >
       <h1 className=" md:text-[10.5vw] text-[40px] font-bold">
         OUR{" "}
         <span className=" bg-gradient-to-b from-orange-500 to-yellow-300 inline-block text-transparent bg-clip-text">
@@ -52,7 +55,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
