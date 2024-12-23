@@ -66,10 +66,7 @@ const Header = () => {
 
   return (
     <header className=" h-[100px] p-4  flex items-center justify-between fixed w-full z-10 bg-black">
-      <img
-        src="/images/The Maverick Logo.png"
-        className=" rounded-full h-[60px]"
-      />
+      <img src="/images/MT-LOGO.png" className=" rounded-full h-[70px]" />
 
       {open && (
         <div className="fixed top-0 left-0 w-full h-screen bg-black bg-opacity-90 z-50">
