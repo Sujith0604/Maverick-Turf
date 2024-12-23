@@ -18,12 +18,12 @@ const App = () => {
       <main className=" flex flex-col gap-11 mt-[100px] md:mt-[100px] font-thin">
         <LandingPage />
         <LaunchingSoon />
+        <WaitingList />
         <section className=" p-4">
           <AboutUs />
           <WhyUs />
           <GalleryPage />
           <Offers />
-          <WaitingList />
           <QuoateSection />
           <ContactUs />
           <Location />

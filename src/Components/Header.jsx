@@ -1,8 +1,6 @@
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import EmailIcon from "@mui/icons-material/Email";
 
@@ -12,35 +10,52 @@ const Header = () => {
   const NavComponent = () => {
     return (
       <nav className=" h-[200px] w-[200px] flex md:hidden">
-        <ul className=" flex flex-col gap-5 text-xl text-gray-500 uppercase ">
+        <ul className=" flex flex-col gap-5 text-xl text-white uppercase ">
           <li>
-            <a href="#landing">Home</a>
+            <a aria-label="home" href="#landing">
+              Home
+            </a>
           </li>
           <li>
-            <a href="#about">Our Story</a>
+            <a aria-label="about" href="#about">
+              Our Story
+            </a>
           </li>
           <li>
-            <a href="#gallery">Gallery</a>
+            <a aria-label="gallery" href="#gallery">
+              Gallery
+            </a>
           </li>
           <li>
-            <a href="#offers">Offers</a>
+            <a aria-label="offers" href="#offers">
+              Offers
+            </a>
           </li>
           <li>
-            <a href="#joinus">Join us</a>
+            <a aria-label="join us" href="#joinus">
+              Join us
+            </a>
           </li>
           <li>
-            <a href="#contact">Contact Us</a>
+            <a aria-label="contact" href="#contact">
+              Contact Us
+            </a>
           </li>
           <li>
-            <a href="#location">Our Location</a>
+            <a aria-label="location" href="#location">
+              Our Location
+            </a>
           </li>
           <li className="flex gap-3 items-center">
-            <a href="whatsapp://send?text=Hello There!&phone=+918838295978">
+            <a
+              aria-label="whatsapp"
+              href="whatsapp://send?text=Hello There!&phone=+918838295978"
+            >
               {" "}
               <WhatsAppIcon className="text-4xl" />
             </a>
 
-            <a href="mailto:sujithkarthikaiselvan@gmail.com">
+            <a aria-label="email" href="mailto:sujithkarthikaiselvan@gmail.com">
               <EmailIcon className="text-4xl" />
             </a>
           </li>
@@ -61,7 +76,7 @@ const Header = () => {
           <div className="flex justify-center items-center w-full h-full">
             <NavComponent />
             <button
-              className="absolute top-5 right-5 text-gray-500"
+              className="absolute top-5 right-5 text-white"
               onClick={() => setOpen(false)}
             >
               <CloseIcon />
@@ -71,7 +86,7 @@ const Header = () => {
       )}
       {!open ? (
         <button
-          className="px-4 py-2 rounded-3xl md:hidden text-gray-500"
+          className="px-4 py-2 rounded-3xl md:hidden text-white"
           onClick={() => setOpen(true)}
         >
           <MenuIcon />
@@ -81,37 +96,54 @@ const Header = () => {
       )}
 
       <nav className=" hidden md:flex items-center justify-center">
-        <ul className="flex gap-6 text-gray-500">
+        <ul className="flex gap-6 text-white">
           <li>
-            <a href="#landing">Home</a>
+            <a aria-label="home" href="#landing">
+              Home
+            </a>
           </li>
           <li>
-            <a href="#about">Our Story</a>
+            <a aria-label="about" href="#about">
+              Our Story
+            </a>
           </li>
           <li>
-            <a href="#gallery">Gallery</a>
+            <a aria-label="gallery" href="#gallery">
+              Gallery
+            </a>
           </li>
           <li>
-            <a href="#offers">Offers</a>
+            <a aria-label="offers" href="#offers">
+              Offers
+            </a>
           </li>
           <li>
-            <a href="#joinus">Join us</a>
+            <a aria-label="joinus" href="#joinus">
+              Join us
+            </a>
           </li>
           <li>
-            <a href="#contact">Contact Us</a>
+            <a aria-label="contact" href="#contact">
+              Contact Us
+            </a>
           </li>
           <li>
-            <a href="#location">Our Location</a>
+            <a aria-label="location" href="#location">
+              Our Location
+            </a>
           </li>
         </ul>
       </nav>
-      <div className="md:flex hidden gap-3 items-center text-gray-500">
-        <a href="whatsapp://send?text=Hello There!&phone=+918838295978">
+      <div className="md:flex hidden gap-3 items-center text-white">
+        <a
+          aria-label="whatsapp"
+          href="whatsapp://send?text=Hello There!&phone=+918838295978"
+        >
           {" "}
           <WhatsAppIcon className="text-4xl" />
         </a>
 
-        <a href="mailto:sujithkarthikaiselvan@gmail.com">
+        <a aria-label="email" href="mailto:sujithkarthikaiselvan@gmail.com">
           <EmailIcon className="text-4xl" />
         </a>
       </div>

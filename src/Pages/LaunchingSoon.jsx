@@ -13,6 +13,7 @@ const LaunchingSoon = () => {
       </h2>
       <a
         href="#joinus"
+        aria-label="joinus"
         className="inline-flex items-center p-4 text-sm font-medium text-center bg-gradient-to-b from-orange-500 to-yellow-300 text-black   focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
       >
         JOIN US

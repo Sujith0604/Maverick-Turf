@@ -1,5 +1,7 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+
 const ContactUs = () => {
   const form = useRef();
 
@@ -12,18 +14,18 @@ const ContactUs = () => {
       })
       .then(
         () => {
-          alert("SUCCESS!");
+          toast("Email sent successfully");
           form.current.reset();
         },
         (error) => {
-          alert("FAILED...", error.text);
-          console.log(error.text);
+          toast("FAILED...");
         }
       );
   };
 
   return (
     <section id="contact" className="">
+      <ToastContainer />
       <h1 className=" md:text-[10.5vw] text-[40px] font-bold  text-center ">
         CONTACT{" "}
         <span className=" bg-gradient-to-b from-orange-500 to-yellow-300 inline-block text-transparent bg-clip-text">
@@ -36,7 +38,7 @@ const ContactUs = () => {
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl"
+            className="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl text-black"
           >
             <div className="flex">
               <h1 className="font-bold  uppercase text-xl md:text-5xl">

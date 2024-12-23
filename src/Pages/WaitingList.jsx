@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
 
 const WaitingList = () => {
   const form = useRef();
@@ -13,12 +14,12 @@ const WaitingList = () => {
       })
       .then(
         () => {
-          alert("SUCCESS!");
+          toast("Email sent successfully");
           form.current.reset();
         },
         (error) => {
-          alert("FAILED...", error.text);
-          console.log(error.text);
+          toast("FAILED...");
+          // console.log(error.text);
         }
       );
   };
@@ -28,10 +29,11 @@ const WaitingList = () => {
       id="joinus"
       className=" flex flex-col gap-11 items-center justify-center p-4"
     >
-      <h1 className=" md:text-[10.5vw] text-[40px] font-bold  text-center ">
-        JOIN{" "}
+      <ToastContainer />
+      <h1 className=" md:text-[5vw] text-[40px] font-bold  text-center ">
+        JOIN OUR WAITING LIST {""}
         <span className=" bg-gradient-to-b from-orange-500 to-yellow-300 inline-block text-transparent bg-clip-text">
-          US
+          NOW
         </span>
       </h1>
       <p className=" text-center">
@@ -63,9 +65,9 @@ const WaitingList = () => {
           <div className="absolute -top-20 -right-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
         </div>
         <div className="flex md:w-1/2 justify-center py-10 items-center bg-white">
-          <form ref={form} onSubmit={sendEmail} className="bg-white">
+          <form ref={form} onSubmit={sendEmail} className="bg-white text-black">
             <h1 className="text-gray-800 font-bold text-2xl mb-1">
-              JOIN US NOW
+              JOIN OUR WAITING LIST
             </h1>
             <p className="text-sm font-normal text-gray-600 mb-7">
               Welcome to Maverick Club
