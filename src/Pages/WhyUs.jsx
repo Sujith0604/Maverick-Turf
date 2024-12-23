@@ -91,6 +91,7 @@ const WhyUs = () => {
                   </h5>
 
                   <button
+                    aria-label="model"
                     onClick={() => {
                       setOpendId(d.id);
                     }}
@@ -128,6 +129,7 @@ const WhyUs = () => {
 
                 <button
                   onClick={() => setOpendId(null)}
+                  aria-label="model"
                   className="text-sm text-gray-500 hover:text-gray-600"
                 >
                   Close
@@ -152,7 +154,7 @@ const WhyUs = () => {
               key={g.id}
               className="max-w-sm bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black"
             >
-              <img className="" src={g.image} loading="lazy" alt="" />
+              <img className="" src={g.image} loading="lazy" alt={g.title} />
               <div className="p-5">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight ">
                   {g.title}
@@ -164,6 +166,7 @@ const WhyUs = () => {
                     : g.description}{" "}
                 </p>
                 <button
+                  aria-label="model"
                   onClick={() => {
                     setOpengId(g.id);
                   }}
@@ -200,6 +203,7 @@ const WhyUs = () => {
               <p className=" text-sm">{selectedGame.description}</p>
 
               <button
+                aria-label="model"
                 onClick={() => setOpengId(null)}
                 className="text-sm text-gray-500 hover:text-gray-600"
               >

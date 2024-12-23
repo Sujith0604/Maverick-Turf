@@ -45,7 +45,7 @@ const Offers = () => {
           <img
             className="object-cover w-full  h-96 md:h-auto md:w-48 md:rounded-none "
             src="/images/Hockey-turf.jpg"
-            alt=""
+            alt="hockey"
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
             <h5 className="mb-2 text-2xl font-bold tracking-tight ">50% OFF</h5>
@@ -59,7 +59,7 @@ const Offers = () => {
           <img
             className="object-cover w-full  h-96 md:h-auto md:w-48 md:rounded-none "
             src="/images/ball.jpg"
-            alt=""
+            alt="football"
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
             <h5 className="mb-2 text-2xl font-bold tracking-tight ">60% OFF</h5>
@@ -73,7 +73,7 @@ const Offers = () => {
           <img
             className="object-cover w-full  h-96 md:h-auto md:w-48 md:rounded-none "
             src="/images/bat.webp"
-            alt=""
+            alt="bat"
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
             <h5 className="mb-2 text-2xl font-bold tracking-tight ">80% OFF</h5>
@@ -87,7 +87,7 @@ const Offers = () => {
           <img
             className="object-cover w-full  h-96 md:h-auto md:w-48 md:rounded-none "
             src="/images/tt.jpg"
-            alt=""
+            alt="tabletennis"
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
             <h5 className="mb-2 text-2xl font-bold tracking-tight ">Free</h5>
@@ -110,7 +110,7 @@ const Offers = () => {
               className="max-w-sm bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black  shadow dark:bg-gray-800 dark:border-gray-700"
             >
               <div>
-                <img className="" src={g.image} loading="lazy" alt="" />
+                <img className="" src={g.image} loading="lazy" alt={g.title} />
               </div>
               <div className="p-5">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight ">
@@ -127,6 +127,7 @@ const Offers = () => {
                   onClick={() => {
                     setOpengId(g.id);
                   }}
+                  aria-label="model"
                   className="inline-flex items-center p-4 text-sm font-medium text-center bg-gradient-to-b from-orange-500 to-yellow-300 text-black   focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   {g.buttonText}
@@ -160,6 +161,7 @@ const Offers = () => {
 
                 <button
                   onClick={() => setOpengId(null)}
+                  aria-label="close"
                   className="text-sm text-gray-500 hover:text-gray-600"
                 >
                   Close

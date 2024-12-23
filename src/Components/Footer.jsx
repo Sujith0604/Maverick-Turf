@@ -7,19 +7,30 @@ const Footer = () => {
   return (
     <footer className="flex flex-col gap-2 justify-center p-4 text-white">
       <div className="  flex md:flex-row flex-col items-center md:gap-0 gap-11 justify-between">
-        <a href="#landing" className=" flex gap-2 items-center">
-          <img src="/images/MT-LOGO.png" className=" rounded-full h-[80px]" />
+        <a
+          href="#landing"
+          aria-label="home"
+          className=" flex gap-2 items-center"
+        >
+          <img
+            src="/images/MT-LOGO.png"
+            alt="Logo"
+            className=" rounded-full h-[80px]"
+          />
           <h1 className=" text-2xl font-bold">Maverick Turf</h1>
         </a>
 
         <div>
           <div className="flex gap-3 items-center">
-            <a href="whatsapp://send?text=Hello There!&phone=+918838295978">
+            <a
+              aria-label="whatsapp"
+              href="whatsapp://send?text=Hello There!&phone=+918838295978"
+            >
               {" "}
               <WhatsAppIcon className="text-4xl" />
             </a>
 
-            <a href="mailto:sujithkarthikaiselvan@gmail.com">
+            <a aria-label="email" href="mailto:sujithkarthikaiselvan@gmail.com">
               <EmailIcon className="text-4xl" />
             </a>
           </div>

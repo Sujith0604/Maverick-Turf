@@ -76,6 +76,7 @@ const ContactUs = () => {
             <div className="my-2 w-1/2 lg:w-1/4">
               <button
                 type="submit"
+                aria-label="submit"
                 value="Send"
                 className="uppercase text-sm font-bold tracking-wide text-black bg-gradient-to-b from-orange-500 to-yellow-300 p-4  w-full 
                       focus:outline-none focus:shadow-outline"

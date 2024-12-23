@@ -66,13 +66,18 @@ const Header = () => {
 
   return (
     <header className=" h-[100px] p-4  flex items-center justify-between fixed w-full z-10 bg-black">
-      <img src="/images/MT-LOGO.png" className=" rounded-full h-[70px]" />
+      <img
+        src="/images/MT-LOGO.png"
+        alt="Logo"
+        className=" rounded-full h-[70px]"
+      />
 
       {open && (
         <div className="fixed top-0 left-0 w-full h-screen bg-black bg-opacity-90 z-50">
           <div className="flex justify-center items-center w-full h-full">
             <NavComponent />
             <button
+              aria-label="close"
               className="absolute top-5 right-5 text-white"
               onClick={() => setOpen(false)}
             >
@@ -83,6 +88,7 @@ const Header = () => {
       )}
       {!open ? (
         <button
+          aria-label="open"
           className="px-4 py-2 rounded-3xl md:hidden text-white"
           onClick={() => setOpen(true)}
         >
